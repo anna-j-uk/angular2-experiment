@@ -1,0 +1,15 @@
+a.nav-list-item.mat-list-item {
+    color: #FFFFFF;
+    display: inline-block;
+}
+md-toolbar-row.mat-toolbar-row {
+    position: relative;
+}
+md-nav-list.mat-nav-list {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.app-content {
+    padding: 20px;
+}

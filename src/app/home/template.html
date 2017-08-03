@@ -1,0 +1,58 @@
+
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col-lg-8">
+            <md-card class="example-card">
+            <md-card-header>
+                <h2>Welcome to Cocks Moors Woods Central Aikikai</h2>
+            </md-card-header>
+            <md-card-content>
+                
+                <div class="media">
+                    <div class="row page-header-aikido-info">
+                        <img class="d-flex mr-3" src="http://www.cocksmoorsaikido.co.uk/img/tony-and-mark.jpg">
+
+                        <div class="media-body">
+                            <div class="page-header-aikido-info-text">
+                            <p>
+                                Aikido classes have been running at Cocks Moors Woods Leisure Centre in Birmingham since the Centre opened in 1984. Cocks Moors Woods Central Aikikai is a strong dojo with many students, and is recognised nationally for its quality and high standards. It is affiliated to the <a href="http://www.britishbirankai.com/" target="_blank">British Birankai</a> organisation under the technical direction of Master Chiba Sensei.
+                            </p>
+
+                            <p>
+                                We are part of the Central Aikikai, which also includes <a href="http://eiohkan.org.uk/index.html" target="_blank">Ei Oh Kan</a> and <a href="http://www.tudorgrangeaikido.co.uk/Pages/default.aspx" target="_blank">Tudor Grange</a>. We are also associated with <a href="http://www.aikikaidornbirn.at/" target="_blank">Dornbirn Aikikai</a> and <a href="http://hohenemsaikikai.at/index.php?id=22" target="_blank">Hohenems Aikikai</a> in Austria. Please use the main menu at the top of the page to learn more about Aikido and the dojo. 
+
+                                New beginners highly encouraged to take part! Click here for details.
+                            </p>
+
+                            <p class="beginners-highlight">
+                                BEGINNERS CLASSES STARTING ON FIRST THURSDAY OF THE MONTH 1930-2030.
+                            </p>
+                            <p class="beginners-highlight">
+                                BLACK BELT INSTRUCTION. ALL WELCOME
+                            </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </md-card-content>
+            </md-card>
+        </div>
+
+        <div class="col-lg-4">
+            <md-card class="example-card">
+                <md-tab-group>
+                    <md-tab  *ngFor="let dojo of dojos" label="{{ dojo.name }}">
+                        <iframe class="e2e-iframe-trusted-src" [src]="dojo.safeSrc" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </md-tab>
+                </md-tab-group>
+            </md-card>
+        </div>
+
+    </div>
+</div>
+
+

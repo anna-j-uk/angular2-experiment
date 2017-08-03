@@ -6,5 +6,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  menuItems = [{
+    name: 'Home',
+    path: ''
+  }, {
+    name: 'Calendar',
+    path: 'calendar'
+  }, {
+    name: 'Instructors',
+    path: 'instructors'
+  }, {
+    name: 'Resources',
+    path: 'resources'
+  }, {
+    name: '...',
+    path: 'test'
+  }];
 }
